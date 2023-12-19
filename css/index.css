@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: contain;
+}
+
+body {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(white);
+  color: var(black);
+}
+
+::selection {
+  background-color: #b8926a;
+  color: #2d2d2b;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 12.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 0.8s;
+  background: linear-gradient(var(--second-text-color), rgb(255, 255, 255));
+}
+
+.d-block {
+  display: flex !important;
+}
+
+#header .main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+#header .main .logo-nav {
+  display: flex;
+  gap: 3.4rem;
+}
+#header .main .logo-nav .nav_list {
+  display: flex;
+  gap: 1.5rem;
+}
+#header .main .button {
+  display: flex;
+  gap: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+#header .main .button:hover {
+  background-color: black;
+  color: white;
+}
+
+#hero {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 300px;
+}
+#hero .banner {
+  text-align: center;
+}
+#hero .banner_title {
+  font-size: 4.2rem;
+  margin-bottom: 1rem;
+}
+#hero .banner_desc {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+#shop {
+  margin-top: 5rem;
+}
+#shop .cards {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+#shop .cards .card {
+  margin-top: 5%;
+  width: 21.25%;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 10px;
+}
+#shop .cards .card_image {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(234, 234, 234);
+}
+#shop .cards .card_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  position: relative;
+  gap: 10px;
+}
+#shop .cards .card_content_button {
+  position: absolute;
+  bottom: 10px;
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+#shop .cards .card_content_button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: white;
+  margin-top: 100px;
+}
